@@ -20,10 +20,6 @@ exports.handler = (event, context, callback) => {
           this.emit(':tell', payload.leeIsSleeping ? sleeping : notSleeping);
         });
       });
-
-      req.on('error', (err) => {
-        console.log(err);
-      });
     }
   };
 
